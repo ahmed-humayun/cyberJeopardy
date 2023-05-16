@@ -4,17 +4,24 @@
   <meta charset="UTF-8">
   <title>Jeopardy</title>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Passion+One:700'><link rel="stylesheet" href="./style1.css">
-
+  <script src="cookie.js"></script>
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
 <div id="brand"><img src="Jeopardy!_logo.svg.png">
-  <a href="game.html">PRESS START</a>
+  <form>
+    <label for="player1">Player 1 Name:</label>
+    <input type="text" id="player1" name="player1"><br><br>
+
+    <label for="player2">Player 2 Name:</label>
+    <input type="text" id="player2" name="player2"><br><br>
+
+  </form>
+  <a href="game1.html" onclick="saveNames()">PRESS START</a>
 </div>
 
 
-<!-- partial -->
-  <script  src="./script1.js"></script>
 
+  <script  src="./script1.js"></script>
 </body>
 </html>

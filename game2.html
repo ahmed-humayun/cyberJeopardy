@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jeopardy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="cookie.js"></script>
+    </head>
+
+
+    <body>
+        <h1>CyberSmartJeopardy</h1>
+        <h2>Player #1: <span id="p2"></span></h2>
+        <script>
+            document.getElementById('p2').innerText=(readCookieValue("player2"))
+        </script>
+        <div class="sticky">
+            <span id="timer">05:00</span>
+        </div>
+        <div id="main">         
+        </div>
+        <h2>SCORE : <span id="score"></span></h2>
+        <button onclick="saveScore2()"><a href="result.html">End Game</a></button>
+        
+        <script src="script.js"></script>
+
+        
+    </body>
+</html>

@@ -7,17 +7,26 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="cookie.js"></script>
     </head>
+
+
     <body>
         <h1>CyberSmartJeopardy</h1>
+        <h2>Player #1: <span id="p1"></span></h2>
+        <script>
+            document.getElementById('p1').innerText=(readCookieValue("player1"))
+        </script>
         <div class="sticky">
             <span id="timer">05:00</span>
         </div>
         <div id="main">         
         </div>
         <h2>SCORE : <span id="score"></span></h2>
+        <button onclick="saveScore1()"><a href="game2.html">Start Player 2</a></button>
         
         <script src="script.js"></script>
+
         
     </body>
 </html>
