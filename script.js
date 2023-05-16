@@ -356,7 +356,7 @@ function startTimer(duration, display) {
   }
   
   window.onload = function () {
-    var setTime = 300,
+    var setTime = 299,
       display = document.querySelector('#timer');
     startTimer(setTime, display);
   };
